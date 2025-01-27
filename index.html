@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="image/navLogo.png" alt="logo" class="logo">
+                    <div class="logo-text">aud Ansari</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skill">Skill</a></div>
+                    <div><a href="#contactUs">Contact Us</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi! Mohammad Daud</div>
+                <div class="hero-section-heading hero-class-sub-heading">I am a <span class="role"></span>
+                </div>
+                <div class="hero-section-description">
+                    I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer
+                </div>
+                <div class="btn-pink" id="btn">Hire me</div>
+            </div>
+            <div class="hero-section-right">
+                <div class="user-image absolute">
+                    <img src="./image/my photo.jpg" alt="" class="user-logo">
+                </div>
+            </div>
+            <div class="faded-text">Mohammad Daud</div>
+        </div>
+
+        <div class="project-section">
+            <h2 class="page-header">Projects</h2>
+            <div class="project-container">
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-right">01</div><div class="project-content">
+                        <div class="project-skills-container">
+                            <img src="./image/expressjs.png" alt="" class="project-skill">
+                            <img src="./image/js.png" alt="" class="project-skill">
+                            <img src="./image/nodejs.png" alt="" class="project-skill">
+                            <img src="./image/reactjs.png" alt="" class="project-skill">
+                        </div>
+                        <div class="project-heading">Dream And Buy</div>
+                        <div class="project-subheading">Welcome to maxwheel. Here you can find your dream car and find everything that you want</div>
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">
+                                <a href="https://mohammaddaud88.github.io/maxwheel/" style="color: white; ">Read More</a></button>
+                            <a href="">
+                                <img src="./image/github.png" alt="" class="icon git-icon">
+                            </a>
+                            <a href="">
+                                <img src="./image/link.png" alt=""  class="icon link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" id="project2">
+                    <div class="project-number project-number-left">02</div><div class="project-content">
+                        <div class="project-skills-container">
+                            <img src="./image/expressjs.png" alt="" class="project-skill">
+                            <img src="./image/js.png" alt="" class="project-skill">
+                            <img src="./image/nodejs.png" alt="" class="project-skill">
+                            <img src="./image/reactjs.png" alt="" class="project-skill">
+                        </div>
+                        <div class="project-heading">Rent Your Favorite Book</div>
+                        <div class="project-subheading">Hello dear ! here you can rent your favorite book on very low price</div>
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="#" target="_blank">
+                                <img src="./image/github.png" alt=""  class="icon git-icon">
+                            </a>
+                            <a href="">
+                                <img src="./image/link.png" alt=""  class="icon link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="skills" class="container skills-container">
+            <div class="skill-container-left">
+                <h2 class="skills-heading">
+                    <span class="caps">M</span>e and
+                    <br>
+                    MyTech Stack
+                </h2>
+                <div class="skill-subheading">
+                    <p>I am Mohammad Daud, a full-stack developer currently pursuing my Master of Computer Applications (MCA). I specialize in building both the frontend and backend of web applications. My skill set includes developing dynamic, responsive user interfaces and designing scalable, secure backend architectures.</p>
+                    <p>
+                        Throughout my projects, I have gained valuable hands-on experience in building APIs, designing intuitive user interfaces, managing databases, and ensuring smooth server-side operations. 
+                    </p>
+                </div>
+            </div>
+            <div class="skill-container-right">
+                <img src="./image/MERN-logo.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const text = "Full Stack Developer";
+        const typedTextDiv = document.getElementsByClassName('role');
+        let index =0;
+        function typingEffect(){
+            if(index < text.length){
+                typedTextDiv.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typingEffect,100);
+            }
+        }
+        typingEffect();
+
+
+    </script>
+</body>
+</html>
